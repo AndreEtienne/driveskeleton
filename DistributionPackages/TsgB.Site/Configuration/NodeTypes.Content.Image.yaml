@@ -1,0 +1,8 @@
+'TsgB.Site:Content.Image':
+  superTypes:
+    'Neos.Neos:Content': true
+    'TsgB.Site:Mixin.Image': true
+  ui:
+    label: Image
+    icon: icon-picture
+    position: 300

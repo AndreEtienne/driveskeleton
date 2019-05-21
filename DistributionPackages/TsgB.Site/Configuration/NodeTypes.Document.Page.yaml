@@ -1,0 +1,7 @@
+'TsgB.Site:Document.Page':
+  superTypes:
+    'TsgB.Site:Document.AbstractPage': true
+  ui:
+    label: i18n
+    icon: icon-file-o
+    position: 100
