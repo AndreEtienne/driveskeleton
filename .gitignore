@@ -15,8 +15,11 @@
 .eel_history
 
 # Frontend template
-/Source/CodeQ.Site/Resources/Public/Frontend/node_modules/
-/Source/CodeQ.Site/Resources/Public/Frontend/bower_components/
+/Source/TsgB.Site/Resources/Public/Frontend/node_modules/
+/Source/TsgB.Site/Resources/Public/Frontend/bower_components/
+/Source/TsgB.Site/Resources/Public/Frontend/.cache/
+/Source/TsgB.Site/Resources/Public/Frontend/dist/
+
 
 # Server, we use nginx
 .htaccess
@@ -24,6 +27,8 @@
 # Various temporary and editor files
 .fuse_hidden
 .sass-cache
+.cache
+dist
 bower_components
 node_modules
 *.DS_Store

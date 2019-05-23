@@ -1,0 +1,25 @@
+{
+  "name": "tsgb",
+  "version": "1.0.0",
+  "description": "frontend of tsgb events ",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel -p 3000 index.pug --open 'google chrome'",
+    "build": "parcel build index.pug -d build/ --no-source-maps"
+  },
+  "author": "Andre Etienne",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "bulma": "^0.7.5",
+    "node-sass": "^4.12.0",
+    "parcel-bundler": "^1.12.3",
+    "pug": "^2.0.3"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

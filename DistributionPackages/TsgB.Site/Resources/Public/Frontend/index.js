@@ -1,5 +1,2 @@
-(function () {
-	'use strict';
-
-	console.log('your code here');
-}());
+import './scss/index.scss'
+import 'normalize.css'
