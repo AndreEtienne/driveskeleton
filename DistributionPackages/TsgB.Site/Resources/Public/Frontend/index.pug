@@ -1,23 +1,49 @@
 // index.pug
 doctype html
+head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
 html(lang="")
-    body.hero-body
-        h1.title hallo
+    body.hero
+        section.hero
+            .jarallax.head
+                img.jarallax-img(src="images/stage.jpg" alt="")
+                .container.has-text-centered.has-text-white
+                    h1 TSGB Next event der Lateinformation
 
-        p.subtitle
-        | Modern CSS framework based on
-        a(href='https://www.telekom.de')  goolge
+                    ul.timer
+                        li
+                            span#days
+                        li
+                            span#hours
+                        li
+                            span#minutes
+                        li
+                            span#seconds
+                    .section
+                        .buttons
+                            a.button.is-primary buy
+                            a.button.is-link Link
 
-        .field
-            .control
-                input.input(type="text" placeholder="Input")
-        .field
-            .control
-                span.select
-                    select
-                        option Select dropdown
-        .buttons
-            a.button.is-primary Primary
-            a.button.is-link Link
+        .container
+            .columns
+                .column
+                    .card
+                        .card-content
+                            .content
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .column
+                    .card
+                        .card-content
+                            .content
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .column
+                    .card
+                        .card-content
+                            .content
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        section.hero
+            .jarallax
+                img.jarallax-img(src="images/stage.jpg" alt="")
+
 
     script(src="index.js")
