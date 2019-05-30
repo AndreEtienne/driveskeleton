@@ -22,7 +22,7 @@ p {
 
 .container {
 
-   > h1 {
+  > h1 {
     &:first-child {
       border-bottom: 1px solid $button-secondary-color;
     }
@@ -73,7 +73,7 @@ p {
 
 
 .dance-logo {
-  max-height: 400px;
+  max-height: 300px;
 }
 
 .images-container {
@@ -104,6 +104,11 @@ p {
     animation: fadein 3s;
     color: $white;
     font-size: 60px;
+  }
+  @include mobile {
+    span {
+      font-size: 30px;
+    }
   }
 }
 @keyframes fadein {

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel -p 3000 index.pug --open 'google chrome'",
-    "build": "parcel build index.pug -d --public-url ./site/ build/ --no-source-maps "
+    "build": "parcel build index.pug -d build/ --public-url ./ --no-source-maps "
   },
   "author": "Andre Etienne",
   "license": "ISC",
