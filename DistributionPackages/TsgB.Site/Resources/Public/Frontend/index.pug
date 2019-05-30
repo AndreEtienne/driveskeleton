@@ -3,47 +3,113 @@ doctype html
 head
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
 html(lang="")
-    body.hero
+    body
         section.hero
             .jarallax.head
-                img.jarallax-img(src="images/stage.jpg" alt="")
-                .container.has-text-centered.has-text-white
-                    h1 TSGB Next event der Lateinformation
-
-                    ul.timer
-                        li
+                img.jarallax-img.img-shadow(src="images/new.jpg" alt="")
+                .container.section.is-small.has-text-centered.has-text-white
+                    .columns.is-gapless
+                        .column
+                            img.dance-logo(src="images/Dance.svg")
+                    .columns.is-gapless            
+                        .column.is-full.has-text-white
+                            h1.title.is-1 Turniere der Latein-Formationen
+                            h2.subtitle.is-2 2.Bundesliga & Oberliga 
+                            span.subtitle Tanzsportgemeinschaft Bietigheim e.V. Next Level
+                    .columns.timer.is-gapless         
+                        .column
                             span#days
-                        li
+                        .column
                             span#hours
-                        li
+                        .column   
                             span#minutes
-                        li
+                        .column    
                             span#seconds
-                    .section
-                        .buttons
-                            a.button.is-primary buy
-                            a.button.is-link Link
-
-        .container
-            .columns
-                .column
-                    .card
-                        .card-content
-                            .content
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                .column
-                    .card
-                        .card-content
-                            .content
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                .column
-                    .card
-                        .card-content
-                            .content
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        section.hero
-            .jarallax
-                img.jarallax-img(src="images/stage.jpg" alt="")
-
-
-    script(src="index.js")
+                    .columns
+                        .column
+                            a.button.is-large.is-primary.buy-button(href="#tickets")
+                                span.icon.is-small
+                                    i.fas.fa-shopping-cart
+                                span GET TICKETS 
+        section.section.is-medium
+          .container
+              .columns
+                  .column
+                       h1.title.subtitle Über das Turnier
+                  .column   
+                      p Burgdoggen pancetta shank biltong andouille shankle pork belly capicola, frankfurter ground round strip steak brisket drumstick. Kevin tail ribeye flank frankfurter shankle filet mignon tenderloin short loin beef ribs. Cow doner frankfurter salami turkey chicken tail, jerky porchetta ham kielbasa boudin shank beef ribs. Salami pork loin sirloin t-bone filet mignon shank pig sausage pancetta strip steak. Picanha capicola pork loin ham hock kevin tongue ribeye pork chop doner tail turkey. Capicola rump pork cupim chicken, jowl picanha venison beef ball tip ham hock kielbasa. Short loin jowl salami fatback.
+              .columns
+                  - for (var x = 0; x < 3; x++)
+                      .column
+                          .card
+                              .card-content
+                                  .content
+                                      h1.title Musik
+                                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. urgdoggen pancetta shank biltong andouille shankle pork belly capicola, frankfurter ground round strip steak brisket drumstick. Kevin t
+        section
+            .jarallax.rating(data-jarallax-video="https://youtu.be/B1EAAH2G5dQ?t=51")
+        section.section.is-small   
+          .container
+              h1.is-1.subtitle Wertungskriterien
+              p Burgdoggen pancetta shank biltong andouille shankle pork belly capicola, frankfurter ground round strip steak brisket drumstick. Kevin tail ribeye flank frankfurter shankle filet mignon tenderloin short loin beef ribs. Cow doner frankfurter salami turkey chicken tail, jerky porchetta ham kielbasa boudin shank beef ribs. Salami pork loin sirloin t-bone filet mignon shank pig sausage pancetta strip steak. Picanha capicola pork loin ham hock kevin tongue ribeye pork chop doner tail turkey. Capicola rump pork cupim chicken, jowl picanha venison beef ball tip ham hock kielbasa. Short loin jowl salami fatback.
+              .columns
+                  - for (var x = 0; x < 4; x++)
+                      .column
+                          .card
+                              .card-content
+                                  .content
+                                      h1.title Musik
+                                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. urgdoggen pancetta shank biltong andouille shankle pork belly capicola, frankfurter ground round strip steak brisket drumstick. Kevin t  
+        section.columns.is-gapless.images-container
+            .column.jarallax
+                img.jarallax-img(src="images/1.jpg" alt="")
+            .column.jarallax
+                img.jarallax-img(src="images/2.jpg" alt="")
+        section.section.is-small.buy
+            .container
+                h1.is-1.subtitle Unsere Preise
+                p Burgdoggen pancetta shank biltong andouille shankle pork belly capicola, frankfurter ground round strip steak brisket drumstick. Kevin tail ribeye flank frankfurter shankle filet mignon tenderloin short loin beef ribs. Cow doner frankfurter salami turkey chicken tail, jerky porchetta ham kielbasa boudin shank beef ribs. Salami pork loin sirloin t-bone filet mignon shank pig sausage pancetta strip steak. Picanha capicola pork loin ham hock kevin tongue ribeye pork chop doner tail turkey. Capicola rump pork cupim chicken, jowl picanha venison beef ball tip ham hock kielbasa. Short loin jowl salami fatback.
+                .columns
+                    - for (var x = 0; x < 3; x++)
+                        .column
+                            .card.money-card
+                                .card-content
+                                    .content
+                                        h1.subtitle.is-3 kategorien 1
+                                        h2.subtitle 30€
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. urgdoggen pancetta shank biltong andouille shankle pork belly capicola, frankfurter ground round strip steak brisket drumstick. Kevin t
+        section#tickets.section.form.is-medium
+            .container
+                .columns
+                    .column.is-half
+                        .field
+                            label.label Name
+                            .control
+                                input.input.is-primary(type="text" placeholder="Text input")
+                        .field
+                            label.label Email
+                            .control.has-icons-left.has-icons-right 
+                                input.input(type="email" placeholder="Email input")
+                                span.icon.is-small.is-left
+                                    i.fas.fa-envelope
+                        .field
+                            label.label Kategorie
+                            .control
+                                .select
+                                    select
+                                        option Kategorie 1
+                                        option Kategorie 2
+                                        option Kategorie 3
+                        .field
+                            label.label Anzahl der Karten 
+                            .control
+                                input.input(type="text" placeholder="Anzahl")
+                    .column.is-half                 
+                        .field
+                            .control
+                                button.button.is-primary Submit                    
+        section
+            .google-card#wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3
+                #map-9cd199b9cc5410cd3b1ad21cab2e54d3  
+            
+    script(src="/index.js")

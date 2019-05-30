@@ -1,0 +1,34 @@
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "../node_modules/bulma/sass/utilities/functions";
+
+$color1: #B71C1C;
+$color2: #FFFFFF;
+$color3: #FF5E5B;
+$color4: rgba(252, 234, 222, 1);
+$color5: rgba(255, 138, 91, 1);
+
+
+$button-color: $color2;
+$button-background-color: $color1;
+$button-secondary-color: lighten($button-background-color, 10%);
+
+
+$button-focus-box-shadow-color: transparent;
+$button-focus-box-shadow-size: none;
+$button-focus-border-color: none;
+
+
+$title-color: $black;
+$subtitle-color: $black;
+
+
+$body-color: $black;
+
+$family-sans-serif: 'Roboto', sans-serif;
+$body-family: 'Roboto', sans-serif;
+
+// 5. Add new color variables to the color map.
+@import '../node_modules/bulma/sass/utilities/derived-variables';
+
+// 6. Import the rest of Bulma

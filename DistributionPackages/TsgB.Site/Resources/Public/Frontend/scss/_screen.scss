@@ -1,0 +1,121 @@
+
+
+
+
+p {
+  margin-bottom: 15px;
+}
+
+.button {
+  &.is-primary {
+    background-color: $button-background-color;
+    color: $button-color;
+    transition: background-color .5s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $button-secondary-color;
+    }
+  }
+}
+
+.container {
+
+   > h1 {
+    &:first-child {
+      border-bottom: 1px solid $button-secondary-color;
+    }
+  }
+}
+
+.buy-button {
+  margin-top: 30px;
+}
+
+
+.jarallax {
+  min-height: 600px;
+  position: relative;
+  z-index: 0;
+
+
+
+  > .jarallax-img {
+    font-family: 'object-fit: cover;';
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.rating {
+  min-height: 70vh;
+}
+
+.head {
+  min-height: 90vh;
+
+  .title,
+  .subtitle {
+    color: $color2;
+  }
+}
+
+.img-shadow {
+  filter: brightness(50%);
+}
+
+
+
+.dance-logo {
+  max-height: 400px;
+}
+
+.images-container {
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.money-card {
+  transition: box-shadow .3s ease-in-out;
+
+  span {
+    font-size: 80px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 2px 3px $color3, 0 0 0 1px $color3;
+  }
+}
+
+
+.timer {
+  span {
+    animation: fadein 3s;
+    color: $white;
+    font-size: 60px;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.google-card {
+  width: 100%;
+}

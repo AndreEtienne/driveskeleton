@@ -1,75 +1,24 @@
-@charset "utf-8";
-// Import a Google Font
+@charset 'utf-8';
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-// Set your brand colors
-$red: #b71c1c;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-
-// Update Bulma's global variables
-$family-sans-serif: 'Open Sans', sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $red;
-$link: $pink;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
-
-// Update some of Bulma's component variables
-$body-background-color: #fff;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
-
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+$fa-font-path: '../node_modules/@fortawesome/fontawesome-free/webfonts';
 // Import only what you need from Bulma
-@import "../node_modules/bulma/sass/utilities/_all.sass";
-@import "../node_modules/bulma/sass/base/_all.sass";
-@import "../node_modules/bulma/sass/elements/button.sass";
-@import "../node_modules/bulma/sass/elements/container.sass";
-@import "../node_modules/bulma/sass/elements/title.sass";
-@import "../node_modules/bulma/sass/form/_all.sass";
-@import "../node_modules/bulma/sass/grid/columns.sass";
-@import "../node_modules/bulma/sass/layout/hero.sass";
-@import "../node_modules/bulma/sass/layout/section.sass";
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 
-
-.jarallax {
-  min-height: 600px;
-  position: relative;
-  z-index: 0;
-}
-.jarallax.head{
-  height:80vh;
-}
-.jarallax > .jarallax-img {
-  position: absolute;
-  object-fit: cover;
-  /* support for plugin https://github.com/bfred-it/object-fit-images */
-  font-family: 'object-fit: cover;';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.card{
-
-}
-.timer{
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  li{
-    span{
-      color: #ffffff;
-      font-size: 60px;
-      font-weight: bold;
-    }
-    p{
-      color: $primary;
-    }
-  }
-}
+@import 'mixins';
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/grid/_all.sass';
+@import '../node_modules/bulma/sass/form/_all.sass';
+@import '../node_modules/bulma/sass/elements/button.sass';
+@import '../node_modules/bulma/sass/elements/container.sass';
+@import '../node_modules/bulma/sass/elements/title.sass';
+@import '../node_modules/bulma/sass/components/card.sass';
+@import '../node_modules/bulma/sass/layout/hero.sass';
+@import '../node_modules/bulma/sass/elements/icon.sass';
+@import '../node_modules/bulma/sass/layout/section.sass';
+@import 'screen';
